@@ -1,37 +1,29 @@
-// App.js
 import React, { useState } from 'react';
-import UploadImage from './ImageDropZone';
-import DisplayImages from './DisplayImages';
-import ImageSearch from './ImageSearch';
+import './App.css';
+import ImageDropZone from './ImageDropZone';
+import Footer from "./Footer";
 
-import Footer from './Footer';
+function HomeScreen() {
+  const [image, setImage] = useState(null);
 
-function Home() {
-  const [uploadedImages, setUploadedImages] = useState([]);
-  const [filteredImages, setFilteredImages] = useState([]);
-
-  const handleImageUpload = (file) => {
-    setUploadedImages([...uploadedImages, file]);
-    setFilteredImages([...uploadedImages, file]); // Initially, display all uploaded images
-  };
-
-  const handleSearch = (searchTerm) => {
-    // Filter images based on the search term
-    const filtered = uploadedImages.filter((image) =>
-      image.name.toLowerCase().includes(searchTerm.toLowerCase())
-    );
-    setFilteredImages(filtered);
+  const handleImageDrop = (file) => {
+    // Process the dropped image file
+    setImage(URL.createObjectURL(file));
   };
 
   return (
-    <div>
-      <h1>Image Search App</h1>
-      <UploadImage onImageUpload={handleImageUpload} />
-      <ImageSearch images={uploadedImages} onSearch={handleSearch} />
-      <DisplayImages images={filteredImages} />
-      <Footer/>
+    <div className="App">
+      <h1>Drag and Drop Images</h1>
+      <ImageDropZone onImageDrop={handleImageDrop} />
+      {image && (
+        <div>
+          <h2>Uploaded Image:</h2>
+          <img src={image} alt="Uploaded" className="uploaded-image"  height={200} width={200}/>
+        </div>
+      )}
+       <Footer/>
     </div>
   );
 }
 
-export default Home;
+export default HomeScreen;

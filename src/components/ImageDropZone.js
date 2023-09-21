@@ -1,20 +1,37 @@
-// UploadImage.js
+import React, { useCallback } from 'react';
+import { useDropzone } from 'react-dropzone';
 
-import React from 'react';
-
-function UploadImage({ onImageUpload }) {
-  const handleFileUpload = (event) => {
-    const file = event.target.files[0];
-    if (file) {
-      onImageUpload(file);
+const ImageDropZone = ({ onImageDrop }) => {
+  const onDrop = useCallback((acceptedFiles) => {
+    // Handle dropped files here
+    if (acceptedFiles && acceptedFiles.length > 0) {
+      const file = acceptedFiles[0];
+      onImageDrop(file);
     }
-  };
+  }, [onImageDrop]);
+
+  const { getRootProps, getInputProps, isDragActive } = useDropzone({
+    onDrop,
+    accept: 'image/*',
+  });
 
   return (
-    <div>
-      <input type="file" accept="image/*" onChange={handleFileUpload} />
+    
+    <div
+      {...getRootProps()}
+      className={`dropzone ${isDragActive ? 'active' : ''}`}
+    >
+      <button>
+      <input {...getInputProps()} />
+      {isDragActive ? (
+        <p>Drop the image here...</p>
+      ) : (
+        <p>Drag and drop an image here, or click to select one</p>
+      )}
+      </button>
+      
     </div>
   );
-}
+};
 
-export default UploadImage;
+export default ImageDropZone;

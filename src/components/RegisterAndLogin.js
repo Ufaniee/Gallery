@@ -6,6 +6,7 @@ import {
 } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 
+
 function RegisterAndLogin() {
   const [login, setLogin] = useState(false);
 
