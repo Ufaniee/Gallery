@@ -1,12 +1,15 @@
 {
-  "name": "gallery",
+  "name": "my-app",
   "version": "0.1.0",
+  "homepage": "https://ufaniee.github.io/HGNx3",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "react-dom": "^18.2.0",
     "react-dropzone": "^14.2.3",
     "react-responsive-carousel": "^3.2.23",
