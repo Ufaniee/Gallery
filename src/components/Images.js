@@ -24,7 +24,7 @@ function Images(){
                         <a target="_blank" href="img_5terre.jpg">
                         <img src={Image1} alt="Cinque Terre" width="600" height="400"/>
                         </a>
-                        <div class="desc">Add a description of the image here</div>
+                        <div class="desc">Godzilla</div>
                     </div>
                     </div>
 
@@ -34,7 +34,7 @@ function Images(){
                         <a target="_blank" href="img_forest.jpg">
                         <img src={Image2} alt="Forest" width="600" height="400"/>
                         </a>
-                        <div class="desc">Add a description of the image here</div>
+                        <div class="desc">Eltigre</div>
                     </div>
                     </div>
 
@@ -43,16 +43,16 @@ function Images(){
                         <a target="_blank" href="img_lights.jpg">
                         <img src={Image3}alt="Northern Lights" width="600" height="400"/>
                         </a>
-                        <div class="desc">Add a description of the image here</div>
+                        <div class="desc">Dragon Slayer</div>
                     </div>
                     </div>
 
                     <div class="responsive">
                     <div class="gallery">
                         <a target="_blank" href="img_mountains.jpg">
-                        <img src={Image3} alt="Mountains" width="600" height="400"/>
+                        <img src={Image9} alt="Mountains" width="600" height="400"/>
                         </a>
-                        <div class="desc">Add a description of the image here</div>
+                        <div class="desc">Fast and Furious</div>
                     </div>
                     </div>
 
@@ -61,7 +61,7 @@ function Images(){
                         <a target="_blank" href="img_mountains.jpg">
                         <img src={Image5} alt="Mountains" width="600" height="400"/>
                         </a>
-                        <div class="desc">Add a description of the image here</div>
+                        <div class="desc">Samurai</div>
                     </div>
                     </div>
 
@@ -70,7 +70,7 @@ function Images(){
                         <a target="_blank" href="img_mountains.jpg">
                         <img src={Image6} alt="Mountains" width="600" height="400"/>
                         </a>
-                        <div class="desc">Add a description of the image here</div>
+                        <div class="desc">Sword</div>
                     </div>
                     </div>
 
@@ -79,7 +79,7 @@ function Images(){
                         <a target="_blank" href="img_mountains.jpg">
                         <img src={Image7} alt="Mountains" width="600" height="400"/>
                         </a>
-                        <div class="desc">Add a description of the image here</div>
+                        <div class="desc">Sea</div>
                     </div>
                     </div>
                     <div class="responsive">
@@ -87,7 +87,7 @@ function Images(){
                         <a target="_blank" href="img_mountains.jpg">
                         <img src={Image8} alt="Mountains" width="600" height="400"/>
                         </a>
-                        <div class="desc">Add a description of the image here</div>
+                        <div class="desc">Moonlight</div>
                     </div>
                     </div>
                     <div class="responsive">
@@ -95,7 +95,7 @@ function Images(){
                         <a target="_blank" href="img_mountains.jpg">
                         <img src={Image9} alt="Mountains" width="600" height="400"/>
                         </a>
-                        <div class="desc">Add a description of the image here</div>
+                        <div class="desc">Fast and Furious</div>
                     </div>
                     </div>
                     <div class="responsive">
@@ -103,7 +103,7 @@ function Images(){
                         <a target="_blank" href="img_mountains.jpg">
                         <img src={Image10} alt="Mountains" width="600" height="400"/>
                         </a>
-                        <div class="desc">Add a description of the image here</div>
+                        <div class="desc">Blade</div>
                     </div>
                     </div>
                     <div class="responsive">
@@ -111,7 +111,7 @@ function Images(){
                         <a target="_blank" href="img_mountains.jpg">
                         <img src={Image11} alt="Mountains" width="600" height="400"/>
                         </a>
-                        <div class="desc">Add a description of the image here</div>
+                        <div class="desc">Flower</div>
                     </div>
                     </div>
                     <div class="responsive">
@@ -119,7 +119,7 @@ function Images(){
                         <a target="_blank" href="img_mountains.jpg">
                         <img src={Image12} alt="Mountains" width="600" height="400"/>
                         </a>
-                        <div class="desc">Add a description of the image here</div>
+                        <div class="desc">Nostalgic</div>
                     </div>
                     </div>
                     <div class="responsive">
@@ -127,7 +127,7 @@ function Images(){
                         <a target="_blank" href="img_mountains.jpg">
                         <img src={Image13} alt="Mountains" width="600" height="400"/>
                         </a>
-                        <div class="desc">Add a description of the image here</div>
+                        <div class="desc">Painting</div>
                     </div>
                     </div>
                     <div class="responsive">
@@ -135,7 +135,7 @@ function Images(){
                         <a target="_blank" href="img_mountains.jpg">
                         <img src={Image14} alt="Mountains" width="600" height="400"/>
                         </a>
-                        <div class="desc">Add a description of the image here</div>
+                        <div class="desc">Flower</div>
                     </div>
                     </div>
                     <div class="responsive">
@@ -143,7 +143,7 @@ function Images(){
                         <a target="_blank" href="img_mountains.jpg">
                         <img src={Image15} alt="Mountains" width="600" height="400"/>
                         </a>
-                        <div class="desc">Add a description of the image here</div>
+                        <div class="desc">Lust</div>
                     </div>
                     </div>
 
