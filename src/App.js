@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import RegisterAndLogin from "./components/RegisterAndLogin";
-import HomeScreen from "./components/Home"; 
-import ForgotPassword from "./components/ForgotPassword";
+import RegisterAndLogin from "../src/components/RegisterAndLogin";
+import HomeScreen from "../src/components/Home";
+import ForgotPassword from "../src/components/ForgotPassword";
 
 function App(){
 
