@@ -2,7 +2,6 @@ import React from "react";
 import Image1 from "./Image/a.jpg";
 import Image2 from "./Image/b.jpg";
 import Image3 from "./Image/c.jpg";
-import Image4 from "./Image/download.jpg";
 import Image5 from "./Image/e.jpg";
 import Image6 from "./Image/f.jpg";
 import Image7 from "./Image/g.jpg";
@@ -51,7 +50,7 @@ function Images(){
                     <div class="responsive">
                     <div class="gallery">
                         <a target="_blank" href="img_mountains.jpg">
-                        <img src={Image4} alt="Mountains" width="600" height="400"/>
+                        <img src={Image3} alt="Mountains" width="600" height="400"/>
                         </a>
                         <div class="desc">Add a description of the image here</div>
                     </div>
@@ -159,4 +158,4 @@ function Images(){
     )
 }
 
-export default Images();
+export default Images;
