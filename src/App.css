@@ -10,7 +10,7 @@
   font-size: calc(10px + 1.5vmin);
 }
 body
-{background-color: black;
+{background-color: rgb(138, 135, 135);
 color: white;}
 
 /* SearchBar.css */
