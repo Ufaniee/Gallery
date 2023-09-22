@@ -1,23 +1,27 @@
 import React, { useState } from 'react';
 
-function SearchComponent({ onSearch }) {
-  const [searchQuery, setSearchQuery] = useState('');
+const SearchBar = ({ handleSearch }) => {
+  const [searchTerm, setSearchTerm] = useState('');
 
-  const handleSearch = () => {
-    onSearch(searchQuery);
+  const handleInputChange = (event) => {
+    setSearchTerm(event.target.value);
+  };
+
+  const handleSearchClick = () => {
+    handleSearch(searchTerm);
   };
 
   return (
     <div>
       <input
         type="text"
-        placeholder="Enter search term"
-        value={searchQuery}
-        onChange={(e) => setSearchQuery(e.target.value)}
+        placeholder="Search Images"
+        value={searchTerm}
+        onChange={handleInputChange}
       />
-      <button onClick={handleSearch}>Search</button>
+      <button onClick={handleSearchClick}>Search</button>
     </div>
   );
-}
+};
 
-export default SearchComponent;
+export default SearchBar;
