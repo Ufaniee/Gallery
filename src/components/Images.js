@@ -22,7 +22,7 @@ const DraggableImage = ({ src, index, moveImage }) => {
 
   return (
     <div ref={(node) => ref(drop(node))} style={{ display: 'inline-block', padding: '10px' }}>
-      <img src={src} alt={`Image ${index}`} width={300} height={300} />
+      <img src={src} alt={`Image ${index}`} width="150" />
     </div>
   );
 };
